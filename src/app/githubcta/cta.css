@@ -40,6 +40,8 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+
 }
 
 .subcta-btn:hover {

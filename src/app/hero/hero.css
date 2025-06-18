@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .hero {
   background-image: var(--background-image);
   background-color: var(--background-color);
   border: 2px dashed rgba(0, 0, 0, 0.2);
-  font-family: 'Patrick Hand', cursive;
+  /* font-family: 'Patrick Hand', cursive; */
+    /* font-family: 'Caveat', cursive; */
+  /* font-family: 'Indie Flower', cursive; */
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+
   color: var(--text-color);
   padding-top: 40px;
   border-top: none;
