@@ -105,14 +105,14 @@
   font-size: 1rem; 
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px; 
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  transition: all 0.3s ease;
 }
 
 .btn-div button:hover {
   opacity: 0.9;
-  transform: translateY(-2px); /* Slight lift on hover */
+  transform: translateY(-2px); 
 }
 
 .btn-div button a {
@@ -120,34 +120,31 @@
   color: white;
 }
 
-/* --- Media Queries --- */
 
-/* For screens smaller than 1024px (e.g., tablets in landscape) */
 @media (max-width: 1024px) {
   .hero-page {
-    flex-direction: column; /* Stack elements vertically */
-    height: auto; /* Allow height to adjust */
+    flex-direction: column; 
+    height: auto;
     padding: 20px 15px;
   }
 
   .hero-container,
   .second-half {
-    width: 100%; /* Take full width */
+    width: 100%; 
     padding: 15px;
   }
 
   .hero-text,
   .hero-container ul {
-    width: 90%; /* Adjust width for smaller screens */
-    max-width: none; /* Remove max-width constraint */
+    width: 90%; 
+    max-width: none; 
   }
 
   .btn-div {
-    margin-top: 50px; /* Adjust margin for smaller screens */
+    margin-top: 50px; 
   }
 }
 
-/* For screens smaller than 768px (e.g., tablets in portrait and larger phones) */
 @media (max-width: 768px) {
   .hero-page {
     padding: 15px 10px;
@@ -160,7 +157,7 @@
 
   .hero-text,
   .hero-container ul {
-    width: 95%; /* Make content slightly wider */
+    width: 95%; 
   }
 
   .hero-text h2 {
@@ -185,7 +182,6 @@
   }
 }
 
-/* For screens smaller than 640px (e.g., typical mobile phones) */
 @media (max-width: 640px) {
   .hero-page {
     padding: 10px;
@@ -193,15 +189,16 @@
 
   .hero-container {
     padding: 10px;
+
   }
 
   .hero-text {
-    width: 100%; /* Full width on smallest screens */
+    width: 80%; 
     margin-bottom: 15px;
   }
 
   .hero-container ul {
-    width: 100%; /* Full width for list */
+    width: 80%; 
   }
 
   .hero-text h2 {
@@ -221,13 +218,13 @@
   }
 
   .terminal-container {
-    width: 95%; /* Nearly full width for terminal */
+    width: 95%; 
   }
 
   .btn-div {
-    margin-top: 30px; /* Reduce top margin further */
-    height: auto; /* Allow height to adjust */
-    padding-bottom: 20px; /* Add some bottom padding */
+    margin-top: 30px; 
+    height: auto; 
+    padding-bottom: 20px; 
   }
 
   .btn-div button {
