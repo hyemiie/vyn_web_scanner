@@ -16,12 +16,14 @@ import {
   SiFastapi,
 } from "react-icons/si";
 
+
 const compatibilityIcons = [
-  <SiPython className="icon-python" />,
-  <SiFlask className="icon-flask" />,
-  <SiDjango className="icon-django" />,
-  <SiFastapi className="icon-fastapi" />,
+  { id: 'python', icon: <SiPython className="icon-python" /> },
+  { id: 'flask', icon: <SiFlask className="icon-flask" /> },
+  { id: 'django', icon: <SiDjango className="icon-django" /> },
+  { id: 'fastapi', icon: <SiFastapi className="icon-fastapi" /> },
 ];
+
 
 
 const scannerErrors = [
@@ -90,9 +92,10 @@ export default function Compatibility() {
       <div className="compatibility-marquee-container">
         <div className="compatibility-marquee-box">
           <div className="compatibility-marquee-scroll" ref={marqueeRef}>
-            {compatibilityIcons.concat(compatibilityIcons).map((icon, i) => (
-              <span key={i} className="language-icon">{icon}</span>
-            ))}
+          {compatibilityIcons.concat(compatibilityIcons).map((item) => (
+  <span key={item.id + Math.random()} className="language-icon">{item.icon}</span>
+))}
+
           </div>
         </div>
       </div>
@@ -101,13 +104,13 @@ export default function Compatibility() {
         AI-Powered Security Scan Errors
       </h3>
       <div className="compatibility-errors-grid">
-        {scannerErrors.map((err, idx) => (
-          <div className="compatibility-error-card" key={idx}>
-            <div className="compatibility-error-icon">{err.icon}</div>
-            <strong>{err.title}</strong>
-            <p className="compatibility-error-desc">{err.desc}</p>
-          </div>
-        ))}
+       {scannerErrors.map((err) => (
+  <div className="compatibility-error-card" key={err.title}>
+    <div className="compatibility-error-icon">{err.icon}</div>
+    <strong>{err.title}</strong>
+    <p className="compatibility-error-desc">{err.desc}</p>
+  </div>
+))}
       </div>
     </div>
   );

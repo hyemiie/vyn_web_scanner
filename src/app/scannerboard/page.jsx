@@ -225,9 +225,7 @@ const ScannerBoard = () => {
                         
                         {issues.length > 0 ? (
                             <div>
-                                {issues.map((issue, index) => (
-                                    <IssueCard key={index} issue={issue} index={index} />
-                                ))}
+                                
                             </div>
                         ) : (
                             <div className="no-issues">
