@@ -69,7 +69,7 @@
 @media(max-width: 600px) {
     .nav-container{
         /* background-color: rgb(219, 168, 98) !important; */
-        width: 300px;
+        width: 65%;
     }
 
     .nav-inner{
