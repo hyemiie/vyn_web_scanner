@@ -43,7 +43,7 @@ const companies = await expand({
                 style={{
                   color: "#4A6FA5",
                   fontSize: "12px",
-                  fontWeight: "200",
+                  fontWeight: "100",
                 }}
               />
               Reliable scraping infrastructure</li>

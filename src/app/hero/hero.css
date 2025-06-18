@@ -1,183 +1,237 @@
-.hero{
-background-image: var(--background-image);
-background-color: var(--background-color);
-border: 2px dashed rgba(0,0,0,0.2);
-font-family: 'Patrick Hand', cursive;
-color: var(--text-color);
-padding-top: 40px;
-border-top: none;
-width: 100%;
-
-/* background: #F9F9F9 url('/paper-texture.png');
-color: #333;
-font-family: 'Fira Code', monospace;
-border: 1px solid #ccc;
-border-radius: 8px;
-box-shadow: 0 5px 10px rgba(0,0,0,0.1); */
-
-/* background-color: #FAF9F6;
-border: 1px solid rgba(0,0,0,0.1);
-box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-font-family: 'Georgia', serif; */
-
-/* background-color: #faf9f6;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c0c0c0' fill-opacity='0.32' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
-
-/* background-color: #faf9f6;
-background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23c0c0c0' fill-opacity='0.32' fill-rule='evenodd'/%3E%3C/svg%3E");
-
-    
-
-background-color: #faf9f6;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23c0c0c0' fill-opacity='0.32'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); */
-/* 
-background-color: #faf9f6;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23c0c0c0' fill-opacity='0.32'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-}
-
-.hero-page{
-    height: 100vh;
-    display: flex;
-        /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
-
-    
-}
-
-.hero-container{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    /* font-family: 'Fira Code', 'Consolas', 'Menlo', 'Courier New', monospace; */
-    
-
-    .hero-text{
-        align-items: center;
-        width: 60%;
-        /* background-color: hotpink; */
-       
-    }
-  
-h2 {
+.hero {
+  background-image: var(--background-image);
+  background-color: var(--background-color);
+  border: 2px dashed rgba(0, 0, 0, 0.2);
+  font-family: 'Patrick Hand', cursive;
+  color: var(--text-color);
+  padding-top: 40px;
+  border-top: none;
   width: 100%;
-  font-size: 35px;
+  box-sizing: border-box; 
+}
+
+.hero-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.hero-container {
+  width: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px; 
+  text-align: center; 
+}
+
+.hero-text {
+  width: 80%; 
+  max-width: 500px; 
+  margin-bottom: 20px; 
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   background-color: #4A6FA5;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  
+  margin-bottom: 10px;
 }
 
-
-    p{
-        /* background-color: gold; */
-        width: 100%;
-        font-size: 15px;
-
-    }
-
-    ul{
-        /* background-color: blanchedalmond; */
-     list-style: none;
-         width: 65%;
-
-    }
+.hero-text p {
+  font-size: clamp(1rem, 2vw, 1.2rem); 
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.list-span{
-    display: flex;
-  
+.hero-container ul {
+  list-style: none;
+  width: 80%;
+  max-width: 500px; 
+  padding: 0; 
+  margin: 0; 
+  text-align: left;
 }
 
-
-.second-half{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: bisque; */
+.hero-container ul li {
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 10px;
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem); 
 }
 
-.terminal-container{
-    /* background-color: rgb(102, 61, 61); */
-    width: 70%;
-    /* border: 2px solid saddlebrown;*/
-} 
-
-.terminal-div{
-    /* background-color: sandybrown; */
-    height: 100%;
-
-
-    pre{
-            border-left: 22px solid rgb(228, 232, 232);
-            border-right: 22px solid rgb(235, 240, 240);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow: scroll;
-
-    }
+.hero-container ul li .fa-check {
+  margin-right: 8px; 
+  flex-shrink: 0; 
+  font-size: 14px; 
+  color: #4A6FA5;
 }
 
-
-
-
-
-
-.btn-div{
-    /* background-color: #f8f8ed; */
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-
-    button{
-        padding: 8px;
-        /* font-family: 'Fira Code', 'Consolas', 'Menlo', 'Courier New', monospace; */
-        border: 1px solid grey;
-         /* background: rgb(40, 86, 120); */
-        background: linear-gradient(135deg, #4A6FA5, #85B3D1);
-        border-radius: 5px;
-
-        color: #dcdcdc !important;
-
-    }
+.second-half {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
+.terminal-container {
+  width: 90%;
+  max-width: 600px; 
+}
 
+.btn-div {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
 
-@media (max-width: 640px) { 
-    .hero-container{
-        width: 100% !important;
-        /* background-color: rgb(84, 70, 47); */
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-     
+.btn-div button {
+  padding: 10px 20px; 
+  border: 1px solid grey;
+  background: linear-gradient(135deg, #4A6FA5, #85B3D1);
+  border-radius: 5px;
+  color: #dcdcdc !important;
+  font-size: 1rem; 
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
 
-    }
+.btn-div button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
 
-    .hero-page{
-        flex-direction: column;
-        /* background-color: aliceblue; */
-    }
+.btn-div button a {
+  text-decoration: none;
+  color: white;
+}
 
-    .second-half{
-        width: 100% !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 20px !important;
-    }
+/* --- Media Queries --- */
 
+/* For screens smaller than 1024px (e.g., tablets in landscape) */
+@media (max-width: 1024px) {
+  .hero-page {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow height to adjust */
+    padding: 20px 15px;
+  }
 
-    .btn-div{
-        margin-top:  75px;
-    }
+  .hero-container,
+  .second-half {
+    width: 100%; /* Take full width */
+    padding: 15px;
+  }
 
-   
+  .hero-text,
+  .hero-container ul {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .btn-div {
+    margin-top: 50px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* For screens smaller than 768px (e.g., tablets in portrait and larger phones) */
+@media (max-width: 768px) {
+  .hero-page {
+    padding: 15px 10px;
+  }
+
+  .hero-container,
+  .second-half {
+    padding: 10px;
+  }
+
+  .hero-text,
+  .hero-container ul {
+    width: 95%; /* Make content slightly wider */
+  }
+
+  .hero-text h2 {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  .hero-text p {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  }
+
+  .hero-container ul li {
+    font-size: clamp(0.85rem, 2.2vw, 1rem);
+  }
+
+  .btn-div {
+    margin-top: 40px;
+  }
+
+  .btn-div button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens smaller than 640px (e.g., typical mobile phones) */
+@media (max-width: 640px) {
+  .hero-page {
+    padding: 10px;
+  }
+
+  .hero-container {
+    padding: 10px;
+  }
+
+  .hero-text {
+    width: 100%; /* Full width on smallest screens */
+    margin-bottom: 15px;
+  }
+
+  .hero-container ul {
+    width: 100%; /* Full width for list */
+  }
+
+  .hero-text h2 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .hero-text p {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+  }
+
+  .hero-container ul li {
+    font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+  }
+
+  .second-half {
+    padding: 10px;
+  }
+
+  .terminal-container {
+    width: 95%; /* Nearly full width for terminal */
+  }
+
+  .btn-div {
+    margin-top: 30px; /* Reduce top margin further */
+    height: auto; /* Allow height to adjust */
+    padding-bottom: 20px; /* Add some bottom padding */
+  }
+
+  .btn-div button {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
 }
