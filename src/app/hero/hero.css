@@ -11,11 +11,10 @@
   border: 2px dashed rgba(0, 0, 0, 0.2);
   /* font-family: 'Patrick Hand', cursive; */
     /* font-family: 'Caveat', cursive; */
-  /* font-family: 'Indie Flower', cursive; */
-  font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
-
+  font-family: 'Indie Flower', cursive;
+  /* font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace; */
   color: var(--text-color);
-  padding-top: 40px;
+  padding-top: 10px;
   border-top: none;
   width: 100%;
   box-sizing: border-box; 

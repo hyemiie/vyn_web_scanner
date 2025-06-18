@@ -28,7 +28,9 @@ const companies = await expand({
   `;
   return (
     <div className="hero">
+    
       <div className="hero-page">
+      
       {/* <ThemeToggle/> */}
         <div className="hero-container">
           <div className="hero-text">

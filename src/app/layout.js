@@ -40,12 +40,12 @@ export default function RootLayout({ children }) {
               </Link>
 
               <div className="heroBtndiv">
-                <Link href="/documentation" passHref legacyBehavior>
+                {/* <Link href="/documentation" passHref legacyBehavior>
                   <a className="docs-link">Read docs</a>
-                </Link>
+                </Link> */}
 
                 <Link href="/scannerboard" passHref legacyBehavior>
-                  <a className="scan-link">Scan repo</a>
+                  <a className="scan-link"> Try Vyn web</a>
                 </Link>
               </div>
 
