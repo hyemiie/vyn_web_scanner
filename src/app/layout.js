@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import Link from "next/link";
+import { LuArrowRight } from "react-icons/lu";
+import "./rootlayout.css";
+import ThemeToggle from "./themetoggle/ThemeToggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +22,29 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body style={{ backgroundColor: "var(--background-color)" }}>
+        <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: 'center' }}>
+          <nav className="nav-container">
+            <div className="nav-inner">
+              <Link href="/hero" className="logo-link">
+                <div className="logo-image"></div>
+              </Link>
+
+              <div className="heroBtndiv">
+                <Link href="/documentation" passHref legacyBehavior>
+                  <a className="docs-link">Read docs</a>
+                </Link>
+
+                <Link href="/scannerboard" passHref legacyBehavior>
+                  <a className="scan-link">Scan repo</a>
+                </Link>
+              </div>
+
+            </div>
+            <ThemeToggle/>
+
+          </nav>
+        </div>
         {children}
       </body>
     </html>

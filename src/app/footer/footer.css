@@ -1,0 +1,26 @@
+.terminal-footer {
+  background: #0e0e0e;
+  color: #4177c2;
+  font-family: 'Courier New', monospace;
+  padding: 1.5rem;
+  text-align: center;
+  border-top: 1px solid #1f1f1f;
+}
+
+.prompt {
+  color: #e27e8a;
+  margin-right: 0.5rem;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.terminal-sub {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+}

@@ -1,0 +1,101 @@
+/* rootlayout.css */
+
+.nav-container {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--nav-bg);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  margin-top: 10px;
+  height: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  background-image: url('/Images/vyn_bg_logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+.heroBtndiv {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.docs-link {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: var(--output-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05);
+}
+
+.scan-link {
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #4A6FA5, #85B3D1);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media(max-width: 600px) {
+    .nav-container{
+        /* background-color: rgb(219, 168, 98) !important; */
+        width: 300px;
+    }
+
+    .nav-inner{
+        /* background-color: #4A6FA5; */
+    }
+
+    .logo-link{
+        height: fit-content;
+          /* width: 100px;
+  height: 100px; */
+    }
+
+    .logo-image{
+         width: 100px;
+  height: 100px;
+    }
+
+    .heroBtndiv{
+        width: 400px;
+        justify-content: flex-end;
+    }
+
+    .docs-link{
+        font-size: 12px;
+          padding: 0.5rem;
+
+    }
+    
+}
