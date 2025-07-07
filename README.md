@@ -1,4 +1,4 @@
-This is the frontend for **Vyn**, a code vulnerability scanner. Built with **Next.js**, it delivers a clean, fast interface to display scan results from the Django backend.
+This is the frontend for **Vyn**, a code vulnerability scanner. It's built with **Next.js** and delivers a clean, fast interface to display scan results from the Django backend.
 🔗 Live: [vyn-web-scanner.vercel.app](https://vyn-web-scanner.vercel.app)
 
 
@@ -43,7 +43,7 @@ npm install
 ```bash
 npm run dev
 ```
-once it starts running go to `http://localhost:3000` to view the application in your browser.
+once it starts running navigate to `http://localhost:3000` to view the application in your browser.
 
 This frontend connects to the [Vyn Backend](https://github.com/hyemiie/vyn-web-demo), which processes scans and serves results via an API.
 
