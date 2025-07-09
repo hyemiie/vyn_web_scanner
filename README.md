@@ -1,4 +1,5 @@
-This is the frontend for **Vyn**, a code vulnerability scanner. It's built with **Next.js** and delivers a clean, fast interface to display scan results from the Django backend.
+This is the frontend repository for **Vyn**, an AI powered code vulnerability scanner. It's built with **Next.js** and consumes REST APIs from the Django backend to render vulnerability reports.
+
 🔗 Live: [vyn-web-scanner.vercel.app](https://vyn-web-scanner.vercel.app)
 
 
