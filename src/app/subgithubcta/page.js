@@ -3,19 +3,22 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 export default function SubGithubCTA() {
   const codeString = `
-const companies = await expand({
-  const dataset = await expand.dataset({
-    sources: ['https://www.ycombinator.com/companies'],
-    schema: Model('Company', {
-      name: Expand.String,
-      batch: Expand.String,
-      url: Expand.String,
-      industry: Expand.String,
-    }),
-    name: 'yc-companies-db',
-  })
-  
-  const companies = await db.findMany('Company')
+import sqlite3
+
+def login():
+    conn = sqlite3.connect('users.db')
+    cursor = conn.cursor()
+
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+
+    query = f"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'"
+    print("Running query:", query)
+    cursor.execute(query)
+
+ 
+
+
   `;
 
   // Basic syntax highlighting

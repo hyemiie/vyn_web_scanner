@@ -12,6 +12,7 @@ import ScannerBoard from "../scannerboard/page";
 import TerminalBox from "./TerminalBox";
 import ThemeToggle from "../themetoggle/ThemeToggle";
 import '../globals.css'
+import ThirdGithubCTA from "../thirdgitcta/page";
 
 export default function Home() {
   const codeString = `
@@ -35,10 +36,12 @@ const companies = await expand({
         <div className="hero-container">
           <div className="hero-text">
             <h2>Vyn</h2>
-            <p>
-              expand.ai instantly turns any website into a type-safe API you can
-              rely on.
-            </p>
+            <div>
+          
+               Instantly finds security flaws and returns clear, actionable fixes.
+              <br/>
+              <p style={{fontWeight: "200", fontStyle:'italic'}}>No More Guesswork. Just Clear, AI-Backed Security</p>
+            </div>
           </div>
           <ul>
              <li> <FaCheck
@@ -48,7 +51,7 @@ const companies = await expand({
                   fontWeight: "100",
                 }}
               />
-              Reliable scraping infrastructure</li>
+              Reliable scanning infrastructure</li>
               <li>
               <FaCheck
                 style={{
@@ -57,7 +60,7 @@ const companies = await expand({
                   fontWeight: "200",
                 }}
               />{" "}
-              High quality with back checking</li>
+              Reduce security risks in production</li>
                 <li> <FaCheck
                 style={{
                   color: "#4A6FA5",
@@ -73,7 +76,7 @@ const companies = await expand({
                   fontWeight: "200",
                 }}
               />{" "}
-           Instant API for any website</li>
+           AI-Powered Fixes</li>
           </ul>
         </div>
         <div className="second-half">
@@ -106,7 +109,7 @@ const companies = await expand({
       <Compatibility />
       <GithubCTA />
       <SubGithubCTA/>
-      <GithubCTA/>
+      <ThirdGithubCTA/>
       <Footer/>
 
     </div>

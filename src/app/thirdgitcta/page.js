@@ -1,21 +1,21 @@
 import "./cta.css";
 import { LuArrowUpRight } from "react-icons/lu";
 
-export default function SubGithubCTA() {
+export default function ThirdGithubCTA() {
   const codeString = `
-def calculate_expression():
-    print("Simple Calculator")
-    user_input = input("Enter a math expression (e.g. 2 + 3 * 4): ")
-    
-    try:
-        # WARNING: This is dangerous!
-        result = eval(user_input)
-        print("Result:", result)
-    except Exception as e:
-        print("Invalid input:", e)
+import os
+
+def delete_file():
+    print("Delete a file from the system")
+    filename = input("Enter the filename to delete: ")
+
+    # Unsafe: input directly embedded in shell command
+    command = f"rm {filename}"
+    print(f"Running: {command}")
+    os.system(command)
 
 if __name__ == "__main__":
-    calculate_expression()
+    delete_file()
 `;
 
   // Basic syntax highlighting
@@ -28,10 +28,9 @@ if __name__ == "__main__":
     <div className="subcta-container">
       <div className="first-subcta-content">
         <div className="subcta-text">
-          <h2>01</h2>
+          <h2>03</h2>
           <p>
-        Scan your code, spot vulnerabilities, while the AI layer catches less obvious issues like misconfigurations, API misuse, and insecure patterns, all before your code reaches production
-          </p>
+Modern development moves fast. Security shouldn’t slow you down. Our AI-enhanced tool fits into your existing workflow, scanning every commit and pull request for subtle vulnerabilities , so you never have to trade speed for safety.          </p>
           <button className="subcta-btn">
             <LuArrowUpRight size={14} color="#e27e8a" />
             Get Custom Documentation
