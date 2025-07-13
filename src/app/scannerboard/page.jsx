@@ -81,9 +81,8 @@ const ScannerBoard = () => {
           repo_url: repolink,
         });
 
-        console.log("Scan successful:", response);
+        console.log("Scan successfuldd:", response);
         setScanResult(response.data);
-
         // if (response.data.report && response.data.report.startsWith("=====")) {
         //   setScanResult(response.data.report);
         // } else setError(response.data.report);
