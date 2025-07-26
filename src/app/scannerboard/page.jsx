@@ -76,13 +76,16 @@ const ScannerBoard = () => {
       setScanResult(null);
 
       try {
-        // Remove the mock response and use the actual API call
-        const response = await axios.post("https://cautious-anne-corinne-yemi-21a9f9d2.koyeb.app/scan_repo/", {
+        const response = await axios.post("http://127.0.0.1:8000/scan_repo/", {
           repo_url: repolink,
-        });
+        },{
+        headers: {
+    "Content-Type": "application/json"
+        }
+  },);
 
         console.log("Scan successfuldd:", response);
-        setScanResult(response.data);
+        setScanResult(response.data, repolink);
         // if (response.data.report && response.data.report.startsWith("=====")) {
         //   setScanResult(response.data.report);
         // } else setError(response.data.report);
