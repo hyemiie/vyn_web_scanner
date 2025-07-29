@@ -76,7 +76,7 @@ const ScannerBoard = () => {
       setScanResult(null);
 
       try {
-        const response = await axios.post("http://127.0.0.1:8000/scan_repo/", {
+        const response = await axios.post("https://cautious-anne-corinne-yemi-21a9f9d2.koyeb.app/scan_repo/", {
           repo_url: repolink,
         },{
         headers: {
